@@ -6,6 +6,24 @@
 	},
 	"item": [
 		{
+			"name": "New Folder",
+			"item": [
+				{
+					"name": "New Request",
+					"id": "e5982fe0-01ed-4ae2-8fc8-968098b8afdf",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
+				}
+			],
+			"id": "a24c85cb-9249-45c2-8452-fd737e7a7687"
+		},
+		{
 			"name": "POST_Method",
 			"id": "b0ad204c-1572-48dd-aebe-660978781107",
 			"protocolProfileBehavior": {
