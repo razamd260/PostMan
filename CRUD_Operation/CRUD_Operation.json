@@ -69,7 +69,16 @@
 					"request": {
 						"method": "PUT",
 						"header": [],
-						"url": "https://reqre.in/api/users/2"
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\" :\"{{$randomFirstName}}\",\r\n    \"job\"  : \"{{$randomJobTitle}}\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "https://reqres.in/api/users/2"
 					},
 					"response": []
 				}
