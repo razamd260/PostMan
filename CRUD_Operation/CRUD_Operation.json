@@ -9,14 +9,67 @@
 			"name": "My_First",
 			"item": [
 				{
-					"name": "New Request",
+					"name": "POST_Method",
 					"id": "e5982fe0-01ed-4ae2-8fc8-968098b8afdf",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
 					},
 					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\"  :  \"{{$randomFirstName}}\",\r\n    \"job\"   :  \"{{$randomJobTitle}}\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "https://reqres.in/api/users"
+					},
+					"response": []
+				},
+				{
+					"name": "GET_Method",
+					"id": "b10b6787-aed6-4a79-9e02-3b0563f61152",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
 						"method": "GET",
-						"header": []
+						"header": [],
+						"url": {
+							"raw": "https://reqres.in/api/users?page=2",
+							"protocol": "https",
+							"host": [
+								"reqres",
+								"in"
+							],
+							"path": [
+								"api",
+								"users"
+							],
+							"query": [
+								{
+									"key": "page",
+									"value": "2"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "New Request",
+					"id": "fdec4efa-7ee2-4159-852b-6f87bb16cca7",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"url": "https://reqre.in/api/users/2"
 					},
 					"response": []
 				}
