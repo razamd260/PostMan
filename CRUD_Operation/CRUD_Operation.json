@@ -6,7 +6,7 @@
 	},
 	"item": [
 		{
-			"name": "New Folder",
+			"name": "My_First",
 			"item": [
 				{
 					"name": "New Request",
@@ -22,28 +22,6 @@
 				}
 			],
 			"id": "a24c85cb-9249-45c2-8452-fd737e7a7687"
-		},
-		{
-			"name": "POST_Method",
-			"id": "b0ad204c-1572-48dd-aebe-660978781107",
-			"protocolProfileBehavior": {
-				"disableBodyPruning": true
-			},
-			"request": {
-				"method": "POST",
-				"header": [],
-				"body": {
-					"mode": "raw",
-					"raw": "{\r\n    \"name\"  : \"{{$randomFirstName}}\",\r\n    \"job\"   : \"{{$randomJobTitle}}\"\r\n} ",
-					"options": {
-						"raw": {
-							"language": "json"
-						}
-					}
-				},
-				"url": "https://reqres.in/api/users"
-			},
-			"response": []
 		}
 	]
 }
