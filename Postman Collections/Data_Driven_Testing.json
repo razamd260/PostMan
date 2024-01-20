@@ -1,0 +1,111 @@
+{
+	"info": {
+		"_postman_id": "73a8778d-de3a-4405-97d3-69af5c28fe6a",
+		"name": "CRUD_Operation",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "My_First",
+			"item": [
+				{
+					"name": "POST_Method",
+					"id": "e5982fe0-01ed-4ae2-8fc8-968098b8afdf",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\"  :  \"{{$randomFirstName}}\",\r\n    \"job\"   :  \"{{$randomJobTitle}}\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "https://reqres.in/api/users"
+					},
+					"response": []
+				},
+				{
+					"name": "GET_Method",
+					"id": "b10b6787-aed6-4a79-9e02-3b0563f61152",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://reqres.in/api/users?page=2",
+							"protocol": "https",
+							"host": [
+								"reqres",
+								"in"
+							],
+							"path": [
+								"api",
+								"users"
+							],
+							"query": [
+								{
+									"key": "page",
+									"value": "2"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "New Request",
+					"id": "fdec4efa-7ee2-4159-852b-6f87bb16cca7",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\" :\"{{$randomFirstName}}\",\r\n    \"job\"  : \"{{$randomJobTitle}}\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "https://reqres.in/api/users/2"
+					},
+					"response": []
+				},
+				{
+					"name": "PATCH_Method",
+					"id": "33479307-a0ee-4ced-b891-ecef52bb51e2",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\"  :  \"{{$randomFirstName}}\",\r\n    \"job\"   :  \"{{$randomJobTitle}}\"\r\n }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "https://reqres.in/api/users/2"
+					},
+					"response": []
+				}
+			],
+			"id": "a24c85cb-9249-45c2-8452-fd737e7a7687"
+		}
+	]
+}
