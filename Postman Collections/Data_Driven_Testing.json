@@ -26,7 +26,8 @@
 								}
 							}
 						},
-						"url": "https://reqres.in/api/users"
+						"url": "https://reqres.in/api/users",
+						"description": "This endpoint makes an HTTP POST request to create a new user on the server. The request should include a JSON payload in the raw request body type with the keys \"name\" and \"job\". The response will have a status code of 201 and will include the newly created user's details with keys \"name\", \"job\", \"id\", and \"createdAt\"."
 					},
 					"response": []
 				},
