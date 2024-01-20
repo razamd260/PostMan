@@ -29,7 +29,90 @@
 						"url": "https://reqres.in/api/users",
 						"description": "This endpoint makes an HTTP POST request to create a new user on the server. The request should include a JSON payload in the raw request body type with the keys \"name\" and \"job\". The response will have a status code of 201 and will include the newly created user's details with keys \"name\", \"job\", \"id\", and \"createdAt\"."
 					},
-					"response": []
+					"response": [
+						{
+							"id": "a116d271-4a47-4848-997c-24e091e6b093",
+							"name": "POST_Method",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"name\"  :  \"{{$randomFirstName}}\",\r\n    \"job\"   :  \"{{$randomJobTitle}}\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": "https://reqres.in/api/users"
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Date",
+									"value": "Sat, 20 Jan 2024 20:34:19 GMT"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "105"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Report-To",
+									"value": "{\"group\":\"heroku-nel\",\"max_age\":3600,\"endpoints\":[{\"url\":\"https://nel.heroku.com/reports?ts=1705782859&sid=c4c9725f-1ab0-44d8-820f-430df2718e11&s=fS%2BqLxHIIKkSDx5vTcJlB%2BBNrPFPwSh7b%2Bc0SsIxsR8%3D\"}]}"
+								},
+								{
+									"key": "Reporting-Endpoints",
+									"value": "heroku-nel=https://nel.heroku.com/reports?ts=1705782859&sid=c4c9725f-1ab0-44d8-820f-430df2718e11&s=fS%2BqLxHIIKkSDx5vTcJlB%2BBNrPFPwSh7b%2Bc0SsIxsR8%3D"
+								},
+								{
+									"key": "Nel",
+									"value": "{\"report_to\":\"heroku-nel\",\"max_age\":3600,\"success_fraction\":0.005,\"failure_fraction\":0.05,\"response_headers\":[\"Via\"]}"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Etag",
+									"value": "W/\"69-xhOQbAz34Vn46S4RFQ7+aM1LYGs\""
+								},
+								{
+									"key": "Via",
+									"value": "1.1 vegur"
+								},
+								{
+									"key": "CF-Cache-Status",
+									"value": "DYNAMIC"
+								},
+								{
+									"key": "Server",
+									"value": "cloudflare"
+								},
+								{
+									"key": "CF-RAY",
+									"value": "848a18f718db937f-MAA"
+								}
+							],
+							"cookie": [],
+							"responseTime": null,
+							"body": "{\n    \"name\": \"Beverly\",\n    \"job\": \"Corporate Marketing Designer\",\n    \"id\": \"373\",\n    \"createdAt\": \"2024-01-20T20:34:19.601Z\"\n}"
+						}
+					]
 				},
 				{
 					"name": "GET_Method",
